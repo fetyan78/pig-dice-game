@@ -34,3 +34,5 @@ class Scoreboard:
                 return player_score
         return None
     
+    def get_scores(self):
+        return self.player_scores
