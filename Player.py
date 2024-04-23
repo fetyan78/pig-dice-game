@@ -5,3 +5,7 @@ class Player:
         """"Initialize a player with a name and computer with true or false""""
         self.name = str(name)
         self.computer = bool(computer)
+    
+    def get_is_computer(self):
+        """check if the player is a computer"""
+        return self.computer
