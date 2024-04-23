@@ -18,6 +18,7 @@ class Computer:
 
         def get_probability(self):
             return self.probability
+        
     def generate_biased_list(self):
         biased_list=[]
         current_value=0
@@ -28,3 +29,6 @@ class Computer:
                 biased_list.append(current_value)
         shuffle(biased_list)
         return biased_list
+    
+    def get_biased_list(self):
+        return self.biased_list
