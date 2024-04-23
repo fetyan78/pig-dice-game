@@ -27,5 +27,11 @@ class TestScoreboard(unittest.TestCase):
         self.scoreboard.update_score("Sara", 10)
         self.scoreboard.resert_score("Sara")
         self.assertEqual(self.scoreboard.get_player("Sara")[1], 0)
+    
+    def test_get_winner(self):
+        self.scoreboard.update_score("Sara", 100)
+        self.assertEqual(self.scoreboard.get_winner(), "Sara")
+    
+    
 
     
