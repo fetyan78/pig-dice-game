@@ -12,3 +12,6 @@ class Computer:
 
         def get_difficulty_level(self):
         return self.get_difficulty_level
+    
+        def set_difficulty(self, difficulty_level):
+        self.difficulty=difficulty_level
