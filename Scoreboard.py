@@ -11,3 +11,9 @@ class Scoreboard:
             if name == player_score [0]:
                 self.player_scores[i][1] += score 
     
+    def update_name(self, current_name, new_name):
+        for i, player_score in enumerate(self.player_scores):
+            if current_name == player_score[0]: 
+                self.player_scores[i][0] = new_name
+                
+    
