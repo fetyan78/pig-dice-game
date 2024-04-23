@@ -13,3 +13,7 @@ class Player:
     def get_name(self):
         """get player name"""
         return self.name
+    
+    def set_name(self, name):
+        """set player name"""
+        self.name = str(name)
