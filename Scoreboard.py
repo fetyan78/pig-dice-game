@@ -28,3 +28,9 @@ class Scoreboard:
                 return self.winning_player
         return None
     
+    def get_player(self, name):
+        for player_score in self.player_scores:
+            if player_score[0] == name:
+                return player_score
+        return None
+    
