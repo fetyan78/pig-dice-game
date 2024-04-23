@@ -11,3 +11,7 @@ class TestPlayer(unittest.TestCase):
     
     def test_get_is_computer(self):
             self.assertFalse(self.player.get_is_computer())
+    
+    def test_set_name(self):
+            self.player.set_name("Sara")
+            self.assertEqual(self.player.get_name(), "Sara")
