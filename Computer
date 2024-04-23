@@ -11,7 +11,20 @@ class Computer:
         self.decision_list=self.generate_decision_list()
 
         def get_difficulty_level(self):
-        return self.get_difficulty_level
+            return self.get_difficulty_level
     
         def set_difficulty(self, difficulty_level):
-        self.difficulty=difficulty_level
+            self.difficulty=difficulty_level
+
+        def get_probability(self):
+            return self.probability
+    def generate_biased_list(self):
+        biased_list=[]
+        current_value=0
+        for i in self.get_probability():
+            i = i // 10
+            current_value +=1
+            for _ in range(i):
+                biased_list.append(current_value)
+        shuffle(biased_list)
+        return biased_list
