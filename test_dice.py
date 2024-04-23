@@ -1,6 +1,7 @@
 import unittest
 import Dice
 
+
 class TestDice(unittest.TestCase):
 
     def setUp(self):
@@ -14,6 +15,6 @@ class TestDice(unittest.TestCase):
         self.assertEqual(len(rolls), 2)
         self.assertTrue(1 <= rolls[0] <= 6)
         self.assertTrue(1 <= rolls[1] <= 6)
-        self.assertTrue(2 <= total <= 12)
-if __name__ == '__main__':
-    unittest.main()
+        self.assertTrue(2 <= total <= 12)           
+    if __name__ == '__main__':
+        unittest.main()
