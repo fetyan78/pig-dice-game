@@ -10,13 +10,13 @@ class Computer:
         self.biased_list=self.generate_biased_list()
         self.decision_list=self.generate_decision_list()
 
-        def get_difficulty_level(self):
+    def get_difficulty_level(self):
             return self.get_difficulty_level
     
-        def set_difficulty(self, difficulty_level):
+    def set_difficulty(self, difficulty_level):
             self.difficulty=difficulty_level
 
-        def get_probability(self):
+    def get_probability(self):
             return self.probability
         
     def generate_biased_list(self):
