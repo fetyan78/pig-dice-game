@@ -9,3 +9,7 @@ class Player:
     def get_is_computer(self):
         """check if the player is a computer"""
         return self.computer
+    
+    def get_name(self):
+        """get player name"""
+        return self.name
