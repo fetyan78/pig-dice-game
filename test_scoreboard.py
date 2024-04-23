@@ -11,3 +11,12 @@ class TestScoreboard(unittest.TestCase):
         self.assertEqual(self.scoreboard.maximum_score, 100)
         self.assertIsNone(self.scoreboard.wining_player)
         self.assertEqual(self.scoreboard.player_scores, [["Sara", 0], ["Sondos", 0], ["Ali", 0]])
+    
+    def test_update_score(self):
+        self.scoreboard.update_score("Sara", 10)
+        self.assertEqual(self.scoreboard.get_player("Sara")[1], 10)
+        
+        self.scoreboard.update_score("Sondos", 20)
+        self.assertEqual(self.scoreboard.get_player("Sondos")[1], 20)
+
+    
