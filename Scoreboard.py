@@ -20,5 +20,11 @@ class Scoreboard:
         for i, player_score in enumerate(self.player_scores):
             if name == player_score[0]:
                 self.player_scores[i][1] = 0 
-                
+    
+    def get_winner(self):
+        for player_score in self.player_scores:
+            if player_score[1] >= self.maximum_score:
+                self.winning_player = player_score[0]
+                return self.winning_player
+        return None
     
