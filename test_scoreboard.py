@@ -41,5 +41,7 @@ class TestScoreboard(unittest.TestCase):
         self.assertEqual(scores, [["Sara", 0], ["Sondos", 0], ["Ali", 0]])
 
 
+if __name__ == '__main__':
+    unittest.main()
 
     
