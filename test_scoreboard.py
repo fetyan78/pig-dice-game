@@ -19,4 +19,9 @@ class TestScoreboard(unittest.TestCase):
         self.scoreboard.update_score("Sondos", 20)
         self.assertEqual(self.scoreboard.get_player("Sondos")[1], 20)
 
+    def test_update_name(self):
+        self.scoreboard.update_name("Sara", "Sarah")
+        self.assertEqual(self.scoreboard.get_player("Sarah")[0], "Sarah")
+    
+
     
