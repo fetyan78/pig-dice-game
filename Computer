@@ -32,3 +32,19 @@ class Computer:
     
     def get_biased_list(self):
         return self.biased_list
+    
+    def generate_decision_list(self):
+        match(self.get_difficulty()):
+            case 1:
+                decision_list = ["pass","pass","roll","roll","roll"]
+                shuffle(decision_list)
+                return decision_list
+            case 2:
+                decision_list = ["pass","roll","roll","roll","roll"]
+                shuffle(decision_list)
+                return decision_list
+            case 3:
+                decision_list = ["pass","roll","roll",
+                                 "roll","roll","roll","roll"]
+                shuffle(decision_list)
+                return decision_list
