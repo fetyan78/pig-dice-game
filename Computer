@@ -48,3 +48,6 @@ class Computer:
                                  "roll","roll","roll","roll"]
                 shuffle(decision_list)
                 return decision_list
+            
+    def get_decision_list(self):
+        return self.decision_list
