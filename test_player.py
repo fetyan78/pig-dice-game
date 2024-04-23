@@ -8,3 +8,6 @@ class TestPlayer(unittest.TestCase):
     
     def test_get_name(self):
             self.assertEqual(self.player.get_name(), "Sondos")
+    
+    def test_get_is_computer(self):
+            self.assertFalse(self.player.get_is_computer())
