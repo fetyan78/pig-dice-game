@@ -8,7 +8,7 @@ import Dice
 import Player
 import Scoreboard
 
-terminal = Terminal()  # global usage
+terminal = Terminal()
 
 class Main(Cmd):
     prompt = ">> "
