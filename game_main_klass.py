@@ -2,13 +2,13 @@ import random
 import time
 from cmd import Cmd
 import Terminal
-import Computer
+import Computer 
 import Histogram
 import Dice
 import Player
 import Scoreboard
 
-terminal = Terminal()  # global usage
+terminal = Terminal()
 
 class Main(Cmd):
     prompt = ">> "
@@ -72,7 +72,7 @@ class Main(Cmd):
                         "Type a new name: ","Name is too short or already in use",
                         scoreboard)
 
-                    if tracker=1:
+                    if tracker==1:
                         scoreboard.update_name(player1.get_name(),new_name)
                         player1.set_name(new_name)
                     if tracker==2:
